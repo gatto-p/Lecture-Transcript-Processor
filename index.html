@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Transcript Processor</title>
+    <link rel="stylesheet" href="/Transcript_processor_2/static/colors.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lecture Transcript Processor</h1>
+        <textarea id="inputTranscript" placeholder="Paste your WebVTT transcript here..."></textarea>
+        <button id="processBtn">Process Transcript</button>
+        
+        <!-- Hidden section for output -->
+        <div id="hiddenSection" style="display: none;">
+            <div id="output">Processed transcript will appear here...</div>
+            <button id="copyBtn">Copy Transcript</button>
+            <button id="downloadPdfBtn">Download PDF</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/Transcript_processor_2/static/backend.js"></script>
+</body>
+</html>
